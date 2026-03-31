@@ -1,0 +1,18 @@
+now the main part front end is on localhost:3000 
+where backend is on localhost:5173  
+we have to make it syncronous so what we have to do
+
+go to frontend and use command npm run build which will create folder dist 
+
+now what is dist folder is
+dist folder contains html, css and js 
+now what are this three file this are the file which is complete your frontend work which is converted in this three file 
+
+now we have to add this complete folder inside backend folder named as public 
+we have to add 
+app.use(express.static("public")); this in backend folder also
+
+and problem in this is that when ever we change something we have to create new dist folder and again have to add it into backend
+
+
+Now itna karne ke liye hum docker file create karte hai
